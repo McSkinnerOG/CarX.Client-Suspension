@@ -46,3 +46,7 @@ D:\Dev\CarX-Mods\ClientSuspension\ClientSuspension\Package\plugins\ClientSuspens
 D:\Dev\CarX-Mods\ClientSuspension\ClientSuspension\Package\plugins\ClientSuspension\ZKWCryptoPlayerPrefs.dll
 D:\Dev\CarX-Mods\ClientSuspension\ClientSuspension\obj\Release\ClientSuspension.csproj.CopyComplete
 D:\Dev\CarX-Mods\ClientSuspension\ClientSuspension\obj\Release\ClientSuspension.dll
+D:\Dev\CarX-Mods\GITHUB\CarX.Client-Suspension\obj\Release\ClientSuspension.csproj.CoreCompileInputs.cache
+D:\Dev\CarX-Mods\GITHUB\CarX.Client-Suspension\obj\Release\ClientSuspension.dll
+D:\Dev\CarX-Mods\GITHUB\CarX.Client-Suspension\Package\plugins\ClientSuspension\ClientSuspension.dll
+D:\Dev\CarX-Mods\GITHUB\CarX.Client-Suspension\obj\Release\ClientSuspension.csproj.AssemblyReference.cache

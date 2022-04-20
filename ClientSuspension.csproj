@@ -38,12 +38,15 @@
     </Reference>
     <Reference Include="AssetCore.Decals">
       <HintPath>..\..\..\..\SteamLibrary\steamapps\common\CarX Drift Racing Online\Drift Racing Online_Data\Managed\AssetCore.Decals.dll</HintPath>
+      <Private>False</Private>
     </Reference>
     <Reference Include="AssetCore.Foundation">
       <HintPath>..\..\..\..\SteamLibrary\steamapps\common\CarX Drift Racing Online\Drift Racing Online_Data\Managed\AssetCore.Foundation.dll</HintPath>
+      <Private>False</Private>
     </Reference>
     <Reference Include="AssetCore.Scene">
       <HintPath>..\..\..\..\SteamLibrary\steamapps\common\CarX Drift Racing Online\Drift Racing Online_Data\Managed\AssetCore.Scene.dll</HintPath>
+      <Private>False</Private>
     </Reference>
     <Reference Include="BepInEx">
       <HintPath>..\..\..\..\SteamLibrary\steamapps\common\CarX Drift Racing Online\BepInEx\core\BepInEx.dll</HintPath>
@@ -51,24 +54,31 @@
     </Reference>
     <Reference Include="BestHTTP">
       <HintPath>..\..\..\..\SteamLibrary\steamapps\common\CarX Drift Racing Online\Drift Racing Online_Data\Managed\BestHTTP.dll</HintPath>
+      <Private>False</Private>
     </Reference>
     <Reference Include="CarSystems.Runtime">
       <HintPath>..\..\..\..\SteamLibrary\steamapps\common\CarX Drift Racing Online\Drift Racing Online_Data\Managed\CarSystems.Runtime.dll</HintPath>
+      <Private>False</Private>
     </Reference>
     <Reference Include="CarX.Extras.Surface">
       <HintPath>..\..\..\..\SteamLibrary\steamapps\common\CarX Drift Racing Online\Drift Racing Online_Data\Managed\CarX.Extras.Surface.dll</HintPath>
+      <Private>False</Private>
     </Reference>
     <Reference Include="CarX.Plugins.Core">
       <HintPath>..\..\..\..\SteamLibrary\steamapps\common\CarX Drift Racing Online\Drift Racing Online_Data\Managed\CarX.Plugins.Core.dll</HintPath>
+      <Private>False</Private>
     </Reference>
     <Reference Include="Driver">
       <HintPath>..\..\..\..\SteamLibrary\steamapps\common\CarX Drift Racing Online\Drift Racing Online_Data\Managed\Driver.dll</HintPath>
+      <Private>False</Private>
     </Reference>
     <Reference Include="Dxt5GpuCompression">
       <HintPath>..\..\..\..\SteamLibrary\steamapps\common\CarX Drift Racing Online\Drift Racing Online_Data\Managed\Dxt5GpuCompression.dll</HintPath>
+      <Private>False</Private>
     </Reference>
     <Reference Include="FMODUnity">
       <HintPath>..\..\..\..\SteamLibrary\steamapps\common\CarX Drift Racing Online\Drift Racing Online_Data\Managed\FMODUnity.dll</HintPath>
+      <Private>False</Private>
     </Reference>
     <Reference Include="Mono.Security">
       <HintPath>..\..\..\..\SteamLibrary\steamapps\common\CarX Drift Racing Online\Drift Racing Online_Data\Managed\Mono.Security.dll</HintPath>
@@ -76,9 +86,11 @@
     </Reference>
     <Reference Include="SmartFox2X">
       <HintPath>..\..\..\..\SteamLibrary\steamapps\common\CarX Drift Racing Online\Drift Racing Online_Data\Managed\SmartFox2X.dll</HintPath>
+      <Private>False</Private>
     </Reference>
     <Reference Include="SonyNP">
       <HintPath>..\..\..\..\SteamLibrary\steamapps\common\CarX Drift Racing Online\Drift Racing Online_Data\Managed\SonyNP.dll</HintPath>
+      <Private>False</Private>
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Configuration" />
@@ -91,72 +103,95 @@
     <Reference Include="System.Xml" />
     <Reference Include="Tayx.Graphy">
       <HintPath>..\..\..\..\SteamLibrary\steamapps\common\CarX Drift Racing Online\Drift Racing Online_Data\Managed\Tayx.Graphy.dll</HintPath>
+      <Private>False</Private>
     </Reference>
     <Reference Include="Unity.Addressables">
       <HintPath>..\..\..\..\SteamLibrary\steamapps\common\CarX Drift Racing Online\Drift Racing Online_Data\Managed\Unity.Addressables.dll</HintPath>
+      <Private>False</Private>
     </Reference>
     <Reference Include="Unity.Burst">
       <HintPath>..\..\..\..\SteamLibrary\steamapps\common\CarX Drift Racing Online\Drift Racing Online_Data\Managed\Unity.Burst.dll</HintPath>
+      <Private>False</Private>
     </Reference>
     <Reference Include="Unity.Burst.Cecil">
       <HintPath>..\..\..\..\SteamLibrary\steamapps\common\CarX Drift Racing Online\Drift Racing Online_Data\Managed\Unity.Burst.Cecil.dll</HintPath>
+      <Private>False</Private>
     </Reference>
     <Reference Include="Unity.Burst.Cecil.Mdb">
       <HintPath>..\..\..\..\SteamLibrary\steamapps\common\CarX Drift Racing Online\Drift Racing Online_Data\Managed\Unity.Burst.Cecil.Mdb.dll</HintPath>
+      <Private>False</Private>
     </Reference>
     <Reference Include="Unity.Burst.Cecil.Pdb">
       <HintPath>..\..\..\..\SteamLibrary\steamapps\common\CarX Drift Racing Online\Drift Racing Online_Data\Managed\Unity.Burst.Cecil.Pdb.dll</HintPath>
+      <Private>False</Private>
     </Reference>
     <Reference Include="Unity.Burst.Cecil.Rocks">
       <HintPath>..\..\..\..\SteamLibrary\steamapps\common\CarX Drift Racing Online\Drift Racing Online_Data\Managed\Unity.Burst.Cecil.Rocks.dll</HintPath>
+      <Private>False</Private>
     </Reference>
     <Reference Include="Unity.Burst.Unsafe">
       <HintPath>..\..\..\..\SteamLibrary\steamapps\common\CarX Drift Racing Online\Drift Racing Online_Data\Managed\Unity.Burst.Unsafe.dll</HintPath>
+      <Private>False</Private>
     </Reference>
     <Reference Include="Unity.Collections">
       <HintPath>..\..\..\..\SteamLibrary\steamapps\common\CarX Drift Racing Online\Drift Racing Online_Data\Managed\Unity.Collections.dll</HintPath>
+      <Private>False</Private>
     </Reference>
     <Reference Include="Unity.Collections.LowLevel.ILSupport">
       <HintPath>..\..\..\..\SteamLibrary\steamapps\common\CarX Drift Racing Online\Drift Racing Online_Data\Managed\Unity.Collections.LowLevel.ILSupport.dll</HintPath>
+      <Private>False</Private>
     </Reference>
     <Reference Include="Unity.Jobs">
       <HintPath>..\..\..\..\SteamLibrary\steamapps\common\CarX Drift Racing Online\Drift Racing Online_Data\Managed\Unity.Jobs.dll</HintPath>
+      <Private>False</Private>
     </Reference>
     <Reference Include="Unity.Mathematics">
       <HintPath>..\..\..\..\SteamLibrary\steamapps\common\CarX Drift Racing Online\Drift Racing Online_Data\Managed\Unity.Mathematics.dll</HintPath>
+      <Private>False</Private>
     </Reference>
     <Reference Include="Unity.MemoryProfiler">
       <HintPath>..\..\..\..\SteamLibrary\steamapps\common\CarX Drift Racing Online\Drift Racing Online_Data\Managed\Unity.MemoryProfiler.dll</HintPath>
+      <Private>False</Private>
     </Reference>
     <Reference Include="Unity.RenderPipelines.Core.Runtime">
       <HintPath>..\..\..\..\SteamLibrary\steamapps\common\CarX Drift Racing Online\Drift Racing Online_Data\Managed\Unity.RenderPipelines.Core.Runtime.dll</HintPath>
+      <Private>False</Private>
     </Reference>
     <Reference Include="Unity.RenderPipelines.Core.ShaderLibrary">
       <HintPath>..\..\..\..\SteamLibrary\steamapps\common\CarX Drift Racing Online\Drift Racing Online_Data\Managed\Unity.RenderPipelines.Core.ShaderLibrary.dll</HintPath>
+      <Private>False</Private>
     </Reference>
     <Reference Include="Unity.RenderPipelines.HighDefinition.Config.Runtime">
       <HintPath>..\..\..\..\SteamLibrary\steamapps\common\CarX Drift Racing Online\Drift Racing Online_Data\Managed\Unity.RenderPipelines.HighDefinition.Config.Runtime.dll</HintPath>
+      <Private>False</Private>
     </Reference>
     <Reference Include="Unity.RenderPipelines.HighDefinition.Runtime">
       <HintPath>..\..\..\..\SteamLibrary\steamapps\common\CarX Drift Racing Online\Drift Racing Online_Data\Managed\Unity.RenderPipelines.HighDefinition.Runtime.dll</HintPath>
+      <Private>False</Private>
     </Reference>
     <Reference Include="Unity.RenderPipelines.ShaderGraph.ShaderGraphLibrary">
       <HintPath>..\..\..\..\SteamLibrary\steamapps\common\CarX Drift Racing Online\Drift Racing Online_Data\Managed\Unity.RenderPipelines.ShaderGraph.ShaderGraphLibrary.dll</HintPath>
+      <Private>False</Private>
     </Reference>
     <Reference Include="Unity.ResourceManager">
       <HintPath>..\..\..\..\SteamLibrary\steamapps\common\CarX Drift Racing Online\Drift Racing Online_Data\Managed\Unity.ResourceManager.dll</HintPath>
+      <Private>False</Private>
     </Reference>
     <Reference Include="Unity.ScriptableBuildPipeline">
       <HintPath>..\..\..\..\SteamLibrary\steamapps\common\CarX Drift Racing Online\Drift Racing Online_Data\Managed\Unity.ScriptableBuildPipeline.dll</HintPath>
+      <Private>False</Private>
     </Reference>
     <Reference Include="Unity.TextMeshPro">
       <HintPath>..\..\..\..\SteamLibrary\steamapps\common\CarX Drift Racing Online\Drift Racing Online_Data\Managed\Unity.TextMeshPro.dll</HintPath>
+      <Private>False</Private>
     </Reference>
     <Reference Include="Unity.Timeline">
       <HintPath>..\..\..\..\SteamLibrary\steamapps\common\CarX Drift Racing Online\Drift Racing Online_Data\Managed\Unity.Timeline.dll</HintPath>
+      <Private>False</Private>
     </Reference>
     <Reference Include="Unity.VisualEffectGraph.Runtime">
       <HintPath>..\..\..\..\SteamLibrary\steamapps\common\CarX Drift Racing Online\Drift Racing Online_Data\Managed\Unity.VisualEffectGraph.Runtime.dll</HintPath>
+      <Private>False</Private>
     </Reference>
     <Reference Include="UnityEngine">
       <HintPath>..\..\..\..\SteamLibrary\steamapps\common\CarX Drift Racing Online\Drift Racing Online_Data\Managed\UnityEngine.dll</HintPath>
@@ -224,6 +259,7 @@
     </Reference>
     <Reference Include="UnityEngine.GIModule">
       <HintPath>..\..\..\..\SteamLibrary\steamapps\common\CarX Drift Racing Online\Drift Racing Online_Data\Managed\UnityEngine.GIModule.dll</HintPath>
+      <Private>False</Private>
     </Reference>
     <Reference Include="UnityEngine.GridModule">
       <HintPath>..\..\..\..\SteamLibrary\steamapps\common\CarX Drift Racing Online\Drift Racing Online_Data\Managed\UnityEngine.GridModule.dll</HintPath>
@@ -279,6 +315,7 @@
     </Reference>
     <Reference Include="UnityEngine.RuntimeInitializeOnLoadManagerInitializerModule">
       <HintPath>..\..\..\..\SteamLibrary\steamapps\common\CarX Drift Racing Online\Drift Racing Online_Data\Managed\UnityEngine.RuntimeInitializeOnLoadManagerInitializerModule.dll</HintPath>
+      <Private>False</Private>
     </Reference>
     <Reference Include="UnityEngine.ScreenCaptureModule">
       <HintPath>..\..\..\..\SteamLibrary\steamapps\common\CarX Drift Racing Online\Drift Racing Online_Data\Managed\UnityEngine.ScreenCaptureModule.dll</HintPath>
@@ -342,6 +379,7 @@
     </Reference>
     <Reference Include="UnityEngine.UIElementsNativeModule">
       <HintPath>..\..\..\..\SteamLibrary\steamapps\common\CarX Drift Racing Online\Drift Racing Online_Data\Managed\UnityEngine.UIElementsNativeModule.dll</HintPath>
+      <Private>False</Private>
     </Reference>
     <Reference Include="UnityEngine.UIModule">
       <HintPath>..\..\..\..\SteamLibrary\steamapps\common\CarX Drift Racing Online\Drift Racing Online_Data\Managed\UnityEngine.UIModule.dll</HintPath>
@@ -365,6 +403,7 @@
     </Reference>
     <Reference Include="UnityEngine.UnityCurlModule">
       <HintPath>..\..\..\..\SteamLibrary\steamapps\common\CarX Drift Racing Online\Drift Racing Online_Data\Managed\UnityEngine.UnityCurlModule.dll</HintPath>
+      <Private>False</Private>
     </Reference>
     <Reference Include="UnityEngine.UnityTestProtocolModule">
       <HintPath>..\..\..\..\SteamLibrary\steamapps\common\CarX Drift Racing Online\Drift Racing Online_Data\Managed\UnityEngine.UnityTestProtocolModule.dll</HintPath>
@@ -404,6 +443,7 @@
     </Reference>
     <Reference Include="UnityEngine.VirtualTexturingModule">
       <HintPath>..\..\..\..\SteamLibrary\steamapps\common\CarX Drift Racing Online\Drift Racing Online_Data\Managed\UnityEngine.VirtualTexturingModule.dll</HintPath>
+      <Private>False</Private>
     </Reference>
     <Reference Include="UnityEngine.VRModule">
       <HintPath>..\..\..\..\SteamLibrary\steamapps\common\CarX Drift Racing Online\Drift Racing Online_Data\Managed\UnityEngine.VRModule.dll</HintPath>
@@ -419,17 +459,19 @@
     </Reference>
     <Reference Include="UnityUIExtensions">
       <HintPath>..\..\..\..\SteamLibrary\steamapps\common\CarX Drift Racing Online\Drift Racing Online_Data\Managed\UnityUIExtensions.dll</HintPath>
+      <Private>False</Private>
     </Reference>
     <Reference Include="XDSRace">
       <HintPath>..\..\..\..\SteamLibrary\steamapps\common\CarX Drift Racing Online\Drift Racing Online_Data\Managed\XDSRace.dll</HintPath>
+      <Private>False</Private>
     </Reference>
     <Reference Include="ZKWCryptoPlayerPrefs">
       <HintPath>..\..\..\..\SteamLibrary\steamapps\common\CarX Drift Racing Online\Drift Racing Online_Data\Managed\ZKWCryptoPlayerPrefs.dll</HintPath>
+      <Private>False</Private>
     </Reference>
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Main.cs" />
-    <Compile Include="Patches\Patches.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Content Include="Package\icon.png" />
     <None Include="GameDir.targets" />

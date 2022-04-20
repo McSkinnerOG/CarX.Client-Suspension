@@ -3,8 +3,7 @@ using BepInEx.Configuration;
 using BepInEx.Logging;
 using CarX;
 using HarmonyLib;
-using System.Collections;
-using System.Collections.Generic;
+using System.Collections; 
 using System.IO;
 using System.Reflection;
 using UnityEngine;
@@ -15,7 +14,7 @@ namespace ClientSuspension
     [BepInPlugin(GUID, MODNAME, VERSION)]
     public class Main : BaseUnityPlugin
     { 
-        public const string MODNAME = "C_Hydraulics", AUTHOR = "ValidUser", GUID = AUTHOR + "_" + MODNAME, VERSION = "1.0.0.0";
+        public const string MODNAME = "Client-Suspension", AUTHOR = "ValidUser", GUID = AUTHOR + "_" + MODNAME, VERSION = "1.0.0.1";
         internal readonly ManualLogSource log;
         internal readonly Harmony harmony;
         internal readonly Assembly assembly;
@@ -70,8 +69,8 @@ namespace ClientSuspension
         {
             SpringStepFloat = Config.Bind("Suspension", "Spring Amount", 0.001f, new ConfigDescription("Amount to go up/down per Update() call", new AcceptableValueRange<float>(0.001f, 0.05f)));
             SpringJumpFloat = Config.Bind("Suspension", "Spring Jump", 0.25f, new ConfigDescription("Amount to jump by", new AcceptableValueRange<float>(0f, 10f)));
-            SpringMaxFloat = Config.Bind("Suspension", "Spring Max", 3f, new ConfigDescription("Amount to extend springs MAX.", new AcceptableValueRange<float>(-4f, 10f)));
-            SpringMinFloat = Config.Bind("Suspension", "Spring Min", 0.02f, new ConfigDescription("Amount to extend springs MIN.", new AcceptableValueRange<float>(-4f, 10f))); 
+            SpringMaxFloat = Config.Bind("Suspension", "Spring Max", 3f, new ConfigDescription("Amount to extend springs MAX.", new AcceptableValueRange<float>(0f, 2f)));
+            SpringMinFloat = Config.Bind("Suspension", "Spring Min", 0.02f, new ConfigDescription("Amount to extend springs MIN.", new AcceptableValueRange<float>(0f, 2f))); 
             SpringJumpSpeedFloat = Config.Bind("Suspension", "Spring Jump Speed", 0.1f, new ConfigDescription("Speed of *Jump*.", new AcceptableValueRange<float>(0.1f, 1f)));
             keyCodeUP = Config.Bind("Suspension", "UP Keybind", KeyCode.Q, "UP Key");
             keyCodeDOWN = Config.Bind("Suspension", "DOWN Keybind", KeyCode.E, "Down Key.");
@@ -84,7 +83,7 @@ namespace ClientSuspension
         { 
             if (Together.Value == true)
             {
-                if (LCCar == null || LCXCar == null) { CarSearch(); } 
+                if (LCCar == null || LCXCar == null) { CarSearch(); }
                 Front.Value = false;
                 Back.Value = false;
                 FrontLeft.maxSpringLen = SpringJumpFloat.Value;
@@ -94,7 +93,7 @@ namespace ClientSuspension
             }
             else if (Front.Value == true)
             {
-                if (LCCar == null || LCXCar == null) { CarSearch(); } 
+                if (LCCar == null || LCXCar == null) { CarSearch(); }
                 Together.Value = false;
                 Back.Value = false;
                 FrontLeft.maxSpringLen = SpringJumpFloat.Value;
@@ -102,16 +101,16 @@ namespace ClientSuspension
             }
             else if (Back.Value == true)
             {
-                if (LCCar == null || LCXCar == null) { CarSearch(); } 
+                if (LCCar == null || LCXCar == null) { CarSearch(); }
                 Together.Value = false;
                 Front.Value = false;
                 BackLeft.maxSpringLen = SpringJumpFloat.Value;
                 BackRight.maxSpringLen = SpringJumpFloat.Value;
             } 
-            yield return new WaitForSeconds(SpringJumpSpeedFloat.Value);
+            yield return new WaitForSeconds(SpringJumpSpeedFloat.Value); 
             if (Together.Value == true)
             {
-                if (LCCar == null || LCXCar == null) { CarSearch(); } 
+                if (LCCar == null || LCXCar == null) { CarSearch(); }
                 Front.Value = false;
                 Back.Value = false;
                 FrontLeft.maxSpringLen = SpringMinFloat.Value;
@@ -121,7 +120,7 @@ namespace ClientSuspension
             }
             else if (Front.Value == true)
             {
-                if (LCCar == null || LCXCar == null) { CarSearch(); } 
+                if (LCCar == null || LCXCar == null) { CarSearch(); }
                 Together.Value = false;
                 Back.Value = false;
                 FrontLeft.maxSpringLen = SpringMinFloat.Value;
@@ -129,7 +128,7 @@ namespace ClientSuspension
             }
             else if (Back.Value == true)
             {
-                if (LCCar == null || LCXCar == null) { CarSearch(); } 
+                if (LCCar == null || LCXCar == null) { CarSearch(); }
                 Together.Value = false;
                 Front.Value = false;
                 BackLeft.maxSpringLen = SpringMinFloat.Value;
@@ -137,12 +136,12 @@ namespace ClientSuspension
             }  
         }
         
-        void Update()
+        public void Update()
         { 
             if (SceneManager.GetSceneByName("SelectCar") == null) 
             {
                 if (Input.GetKey(keyCodeUP.Value))
-                {
+                {  
                     if (Together.Value == true)
                     {
                         if (LCCar == null || LCXCar == null) { CarSearch(); }
@@ -160,7 +159,7 @@ namespace ClientSuspension
                     else if (Front.Value == true)
                     {
                         if (LCCar == null || LCXCar == null) { CarSearch(); }
-                        Together.Value = false;
+                        Together.Value = false; 
                         Back.Value = false;
                         FrontLeft.maxSpringLen -= SpringStepFloat.Value;
                         if (FrontLeft.maxSpringLen < SpringMinFloat.Value) { FrontLeft.maxSpringLen = SpringMinFloat.Value; }
@@ -170,7 +169,7 @@ namespace ClientSuspension
                     else if (Back.Value == true)
                     {
                         if (LCCar == null || LCXCar == null) { CarSearch(); }
-                        Together.Value = false;
+                        Together.Value = false; 
                         Front.Value = false;
                         BackLeft.maxSpringLen -= SpringStepFloat.Value;
                         if (BackLeft.maxSpringLen < SpringMinFloat.Value) { BackLeft.maxSpringLen = SpringMinFloat.Value; }
@@ -179,12 +178,12 @@ namespace ClientSuspension
                     }
                 }
                 if (Input.GetKey(keyCodeDOWN.Value))
-                {
+                { 
                     if (Together.Value == true)
                     {
-                        Front.Value = false;
-                        Back.Value = false;
                         if (LCCar == null || LCXCar == null) { CarSearch(); }
+                        Front.Value = false; 
+                        Back.Value = false; 
                         FrontLeft.maxSpringLen += SpringStepFloat.Value;
                         if (FrontLeft.maxSpringLen > SpringMaxFloat.Value) { FrontLeft.maxSpringLen = SpringMaxFloat.Value; }
                         FrontRight.maxSpringLen += SpringStepFloat.Value;
@@ -196,9 +195,9 @@ namespace ClientSuspension
                     }
                     else if (Front.Value == true)
                     {
-                        Together.Value = false;
-                        Back.Value = false;
                         if (LCCar == null || LCXCar == null) { CarSearch(); }
+                        Together.Value = false; 
+                        Back.Value = false; 
                         FrontLeft.maxSpringLen += SpringStepFloat.Value;
                         if (FrontLeft.maxSpringLen > SpringMaxFloat.Value) { FrontLeft.maxSpringLen = SpringMaxFloat.Value; }
                         FrontRight.maxSpringLen += SpringStepFloat.Value;
@@ -206,9 +205,9 @@ namespace ClientSuspension
                     }
                     else if (Back.Value == true)
                     {
-                        Together.Value = false;
-                        Front.Value = false;
                         if (LCCar == null || LCXCar == null) { CarSearch(); }
+                        Together.Value = false; 
+                        Front.Value = false; 
                         BackLeft.maxSpringLen += SpringStepFloat.Value;
                         if (BackLeft.maxSpringLen > SpringMaxFloat.Value) { BackLeft.maxSpringLen = SpringMaxFloat.Value; }
                         BackRight.maxSpringLen += SpringStepFloat.Value;

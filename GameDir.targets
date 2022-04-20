@@ -2,6 +2,6 @@
 <Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
 
   <PropertyGroup>
-    <GameDir>YourInstallPath\SteamLibrary\steamapps\common\Muck</GameDir>
+    <GameDir>D:\SteamLibrary\steamapps\common\CarX Drift Racing Online</GameDir>
   </PropertyGroup>
 </Project>
